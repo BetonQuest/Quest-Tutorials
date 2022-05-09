@@ -1,0 +1,21 @@
+events:
+  startFishingObj: objective start fishingObj
+  tourAlreadyDoneTagAdd: tag add tourAlreadyDoneTag
+
+  caughtAllFish: folder finishedFishingTagAdd,notifyCaughtAllFish
+  finishedFishingTagAdd: tag add finishedFishingTag
+  notifyCaughtAllFish: notify You caught enough fish!\nReturn to the blacksmith! io:Title sound:firework_rocket
+  startedFishingTagAdd: tag add startedFishingTag
+
+  giveFoodToPlayer: give steak:16
+  foodReceivedTagAdd: tag add foodReceivedTag
+
+  townTourEvent: folder location1,location2,location3,blacksmith delay:2 period:5
+  location1: teleport 100;70;100;world
+  location2: teleport 200;73;200;world
+  location3: teleport 300;71;300;world
+  blacksmith: teleport 50;70;50;world
+
+  takeFishFromPlayer: take COD:10
+  rewardPlayer: command give %player% leather_boots 1
+  finishedTagAdd: tag add finishedTag
