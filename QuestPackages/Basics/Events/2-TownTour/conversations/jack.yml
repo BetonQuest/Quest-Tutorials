@@ -1,7 +1,7 @@
 conversations:
   Jack:
     quester: Jack
-    first: tourAlreadyDone,firstGreeting
+    first: firstGreeting
 
     NPC_options:
       firstGreeting:
@@ -18,28 +18,16 @@ conversations:
         pointer: yesPlease
       foodAnswer:
         text: You're welcome! Take it... &7*gives food*
-        events: foodReceivedTagAdd,giveFoodToPlayer
+        events: giveFoodToPlayer
         pointer: thankYou
-        conditions: '!foodReceivedTag'
-      alreadyFoodReceived:
-        text: Oh! I think you already got food from me...
-        conditions: foodReceivedTag
-        pointer: saySorry
       townTour:
-        text: Yeah that's true. You know what also smells good except the food? The fresh air in my town! Would you like to take a little tour?
+        text: Yeah that's true. You know what also smells good? The fresh air in my town! Would you like to take a little tour?
         pointer: enoughTime,noTimeForThat
       startTheTour:
         text: Great! It is a honor for me to guide you through the town.
-        events: tourAlreadyDoneTagAdd,townTourEvent
-        conditions: '!tourAlreadyDoneTag'
+        events: townTourEvent
       noProblem:
         text: That's fine! Maybe you have time another day... Just talk to me again. See you!
-      tourAlreadyDone:
-        text: How was the tour through this beautiful town?
-        pointer: veryNice
-        conditions: tourAlreadyDoneTag
-      goodToHear:
-        text: Good to hear that! It was a pleasure for me.
 
     player_options:
       whereYouFrom:
@@ -53,10 +41,7 @@ conversations:
         pointer: cityAnswer
       yesPlease:
         text: Oh yes I'm starving! Thank you.
-        pointer: foodAnswer,alreadyFoodReceived
-      saySorry:
-        text: You are right. The food you gave me smells good.
-        pointer: townTour
+        pointer: foodAnswer
       thankYou:
         text: Oh that smells really good!
         pointer: townTour
@@ -64,9 +49,5 @@ conversations:
         text: Yes of course! Show me everything.
         pointer: startTheTour
       noTimeForThat:
-        text: Sorry but I don't have time now...
+        text: Sorry, but I don't have time now...
         pointer: noProblem
-      veryNice:
-        text: It was great! I love your town!
-        pointer: goodToHear
-
