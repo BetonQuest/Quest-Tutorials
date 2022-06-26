@@ -1,0 +1,5 @@
+npcs:
+  '1': Jack
+
+items:
+  steak: COOKED_BEEF

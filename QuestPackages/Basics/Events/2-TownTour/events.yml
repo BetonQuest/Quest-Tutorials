@@ -1,0 +1,7 @@
+events:
+  giveFoodToPlayer: give steak:16
+  townTourEvent: folder location1,location2,location3,blacksmith delay:2 period:5
+  location1: teleport 100;70;100;world
+  location2: teleport 200;73;200;world
+  location3: teleport 300;71;300;world
+  blacksmith: teleport 50;70;50;world
