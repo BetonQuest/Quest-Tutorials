@@ -30,7 +30,7 @@ conversations:
         pointer: enoughTime,noTimeForThat
       startTheTour:
         text: Great! It is a honor for me to guide you through the town.
-        events: tourAlreadyDoneTagAdd,townTourEvent
+        events: tourAlreadyDoneTagAdd,townTour
         conditions: '!tourAlreadyDoneTag'
       noProblem:
         text: That's fine! Maybe you have time another day... Just talk to me again. See you!
