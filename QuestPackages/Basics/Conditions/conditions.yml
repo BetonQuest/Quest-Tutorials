@@ -1,7 +1,7 @@
 conditions:
-  foodReceivedTag: tag foodReceivedTag
-  tourAlreadyDoneTag: tag tourAlreadyDoneTag
-  finishedTag: tag finishedTag
-  finishedFishingTag: tag finishedFishingTag
-  startedFishingTag: tag startedFishingTag
-  hasFishInInv: item COD:10
+  foodReceivedTag: "tag foodReceivedTag"
+  tourAlreadyDoneTag: "tag tourAlreadyDoneTag"
+  finishedTag: "tag finishedTag"
+  finishedFishingTag: "tag finishedFishingTag"
+  startedFishingTag: "tag startedFishingTag"
+  hasFishInInv: "item COD:10"

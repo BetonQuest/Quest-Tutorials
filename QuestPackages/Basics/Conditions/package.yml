@@ -1,7 +1,7 @@
 npcs:
-  '11': Jack
-  '12': Blacksmith
+  '11': "Jack"
+  '12': "Blacksmith"
 
 items:
-  STEAK: minecraft:cooked_beef
-  COD: minecraft:cod
+  STEAK: "minecraft:cooked_beef"
+  COD: "minecraft:cod"

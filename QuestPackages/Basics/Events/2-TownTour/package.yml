@@ -1,5 +1,5 @@
 npcs:
-  '1': Jack
+  '1': "Jack"
 
 items:
-  steak: COOKED_BEEF
+  steak: "COOKED_BEEF"
