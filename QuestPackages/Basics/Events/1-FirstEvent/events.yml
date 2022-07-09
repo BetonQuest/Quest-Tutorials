@@ -1,2 +1,2 @@
 events:
-  giveFoodToPlayer: give steak:16
+  giveFoodToPlayer: "give steak:16"
