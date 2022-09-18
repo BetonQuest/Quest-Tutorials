@@ -5,3 +5,4 @@ conditions:
   finishedFishingTag: "tag finishedFishingTag"
   startedFishingTag: "tag startedFishingTag"
   hasFishInInv: "item COD:10"
+  isNight: "time 6-18"
