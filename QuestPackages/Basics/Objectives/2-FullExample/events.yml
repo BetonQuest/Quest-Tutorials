@@ -6,3 +6,4 @@ events:
   tpLocation3: "teleport 300;71;300;world"
   tpBlacksmith: "teleport 50;70;50;world"
   startFishingObj: "objective start fishingObj"
+  caughtAllFish: "notify You caught enough fish!\nReturn to the blacksmith! io:Title sound:firework_rocket"
