@@ -1,3 +1,2 @@
 objectives:
   fishingObj: "fish cod 10 notify hookLocation:100;50;100;world range:20 events:caughtAllFish"
-  caughtAllFish: "notify You caught enough fish!\nReturn to the blacksmith! io:Title sound:firework_rocket"
