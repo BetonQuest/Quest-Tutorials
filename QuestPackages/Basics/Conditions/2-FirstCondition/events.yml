@@ -1,0 +1,9 @@
+events:
+  giveFoodToPlayer: "give steak:16"
+  townTour: "folder tpLocation1,tpLocation2,tpLocation3,tpBlacksmith delay:2 period:5"
+  tpLocation1: "teleport 100;70;100;world"
+  tpLocation2: "teleport 200;73;200;world"
+  tpLocation3: "teleport 300;71;300;world"
+  tpBlacksmith: "teleport 50;70;50;world"
+  startFishingObj: "objective start fishingObj"
+  caughtAllFish: "notify You caught enough fish!\nReturn to the blacksmith! io:Title sound:firework_rocket"

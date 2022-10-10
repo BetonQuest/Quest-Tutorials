@@ -1,7 +1,7 @@
 conversations:
   Jack:
     quester: Jack
-    first: tourAlreadyDone,firstGreeting
+    first: tourAlreadyDone,alreadyFoodReceived,firstGreeting
 
     NPC_options:
       firstGreeting:
