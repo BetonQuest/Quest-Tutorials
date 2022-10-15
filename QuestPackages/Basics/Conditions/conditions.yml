@@ -1,5 +1,5 @@
 conditions:
-  foodReceivedTag: "tag foodReceivedTag"
+  hasReceivedFood: "tag foodReceived"
   tourAlreadyDoneTag: "tag tourAlreadyDoneTag"
   finishedTag: "tag finishedTag"
   finishedFishingTag: "tag finishedFishingTag"

@@ -18,12 +18,12 @@ conversations:
         pointer: "yesPlease"
       foodAnswer:
         text: "You're welcome! Take it... &7*gives food*"
-        events: "{==foodReceivedTagAdd==},giveFoodToPlayer"
+        events: "{==addFoodReceivedTag==},giveFoodToPlayer"
         pointer: "thankYou"
-        conditions: "!foodReceivedTag"
-      alreadyFoodReceived:
-        text: "Oh! I think you already got food from me..."
-        conditions: "foodReceivedTag"
+        conditions: "!hasReceivedFood"
+      alreadyReceivedFood:
+        text: "Hey %player%! I think I already gave you your welcome food..."
+        conditions: "hasReceivedFood"
         pointer: "saySorry"
       townTour:
         text: "Yeah that's true. You know what also smells good? The fresh air in my town! Would you like to take a little tour?"
@@ -48,7 +48,7 @@ conversations:
         text: "Oh yes I'm starving! Thank you."
         pointer: "foodAnswer"
       saySorry:
-        text: "You are right. The food you gave me smells good."
+        text: "You are right. Thanks again!"
         pointer: "townTour"
       thankYou:
         text: "Oh that smells really good!"
