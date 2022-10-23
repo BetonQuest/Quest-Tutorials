@@ -18,7 +18,7 @@ conversations:
         pointer: "yesPlease"
       foodAnswer:
         text: "You're welcome! Take it... &7*gives food*"
-        events: "{==addFoodReceivedTag==},giveFoodToPlayer"
+        events: "addFoodReceivedTag,giveFoodToPlayer"
         pointer: "thankYou"
         conditions: "!hasReceivedFood"
       alreadyReceivedFood:
