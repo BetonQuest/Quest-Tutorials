@@ -10,9 +10,10 @@ conversations:
         text: "So every new citizens in our town will get a new armour from me but you have to do something for me in order to get this really nice upgrade!"
         pointer: "whatToDo"
       collectFish:
-        text: "You will have to fish 10 fresh cod for me and bring them to me. After that I will give you the nice new armour! Is that a deal?"        pointer: accept,deny
+        text: "You will have to fish 10 fresh cod for me and bring them to me. After that I will give you the nice new armour! Is that a deal?"
+        pointer: "accept,deny"
       maybeLater:
-        text: "No problem! You can comeback later aswell. Bye!"
+        text: "No problem! You can comeback later as well. Bye!"
       goodLuck:
         text: "Good luck and I will see you later!"
       alreadyStarted:
@@ -27,13 +28,13 @@ conversations:
           pointer: "seeYouSoon"
           conditions: "hasFishInInv"
         cheater:
-          text: "Heeeyy! Dont try to cheat boy!"
+          text: "Heeeyy! Don't try to cheat boy!"
           conditions: "!hasFishInInv"
         goodbye:
           text: "It was nice to meet you! I hope we will see us soon again. Goodbye"
     player_options:
       thatsRight:
-        text: "Yeah thats true. Thank you!"
+        text: "Yeah that's true. Thank you!"
         pointer: "newArmorForNewCitizens"
       whatToDo:
         text: "What can I do for you?"
@@ -43,7 +44,7 @@ conversations:
         event: "startFishingObj,startedFishingTagAdd"
         pointer: "goodLuck"
       deny:
-        text: "I dont have time right now."
+        text: "I don't have time right now."
         pointer: "maybeLater"
       agree:
         text: "Of course! Take em."
