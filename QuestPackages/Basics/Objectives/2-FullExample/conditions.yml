@@ -1,0 +1,6 @@
+conditions:
+  isNight: "time 6-18"
+  hasReceivedFood: "tag foodReceived"
+  objectiveOngoing: "objective fishingObj" # NEW
+  objectiveCompleted: "tag fishedFish" # NEW
+  questDone: "tag questDone"
