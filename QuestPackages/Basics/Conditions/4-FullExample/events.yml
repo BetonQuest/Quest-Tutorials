@@ -11,3 +11,5 @@ events:
 
   tourAlreadyDoneTagAdd: "tag add tourAlreadyDoneTag"
   startedFishingTagAdd: "tag add startedFishingTag"
+  takeFishFromPlayer: "take cod:10"
+  rewardPlayer: "give leatherBoots:1,leatherChestplate:1,leatherLeggings:1,leatherHelmet:1"
