@@ -5,3 +5,7 @@ npcs:
 items:
   steak: "COOKED_BEEF"
   cod: "COD"
+  ironHelmet: "IRON_HELMET"
+  ironChestplate: "IRON_CHESTPLATE"
+  ironLeggings: "IRON_LEGGINGS"
+  ironBoots: "IRON_BOOTS"
