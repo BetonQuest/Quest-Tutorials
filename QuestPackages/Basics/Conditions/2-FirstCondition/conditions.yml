@@ -1,2 +1,2 @@
 conditions:
-  isNight: "time 6-18"
+  isDay: "time 6-18"
