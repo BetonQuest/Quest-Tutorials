@@ -23,13 +23,13 @@ conversations:
         text: "Oh let me see! Amazing.. Can I have them?"
         pointer: "agree"
         conditions: "hasFishInInv"
-        giveFishToBlacksmith:
-          text: "Thank you very much and here is the promised armour!"
-          pointer: "seeYouSoon"
-          events: "takeFishFromPlayer,rewardPlayer"
-          conditions: "hasFishInInv"
-        goodbye:
-          text: "It was nice to meet you! I hope we will see us soon again. Goodbye"
+      giveFishToBlacksmith:
+        text: "Thank you very much and here is the promised armour!"
+        pointer: "seeYouSoon"
+        events: "takeFishFromPlayer,rewardPlayer"
+        conditions: "hasFishInInv"
+      goodbye:
+        text: "It was nice to meet you! I hope we will see us soon again. Goodbye"
     player_options:
       thatsRight:
         text: "Yeah that's true. Thank you!"
