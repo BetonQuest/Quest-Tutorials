@@ -1,7 +1,7 @@
 conversations:
   Blacksmith:
     quester: "Blacksmith"
-    first: "alreadyStarted,firstGreeting"
+    first: "questCompleted,caughtAllFish,alreadyStarted,firstGreeting"
     NPC_options:
       firstGreeting:
         text: "Welcome %player% in Valencia! The mayor already told me that you are new to our town."
@@ -23,10 +23,13 @@ conversations:
         text: "Oh let me see! Amazing.. Can I have them?"
         pointer: "agree"
         conditions: "hasFishInInv"
+      questCompleted:
+        text: "Thanks again..."
+        conditions: "finishedTag"
       giveFishToBlacksmith:
-        text: "Thank you very much and here is the promised armour!"
+        text: "Thank you very much! Here is your promised armour!"
         pointer: "seeYouSoon"
-        events: "takeFishFromPlayer,rewardPlayer"
+        events: "takeFishFromPlayer,rewardPlayer,finishedTagAdd"
         conditions: "hasFishInInv"
       goodbye:
         text: "It was nice to meet you! I hope we will see us soon again. Goodbye"
