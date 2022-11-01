@@ -1,7 +1,0 @@
-conditions:
-  isNight: "time 6-18"
-  hasReceivedFood: "tag foodReceived"
-  tourAlreadyDoneTag: "tag tourAlreadyDoneTag"
-  hasFishInInv: "item cod:10"
-  startedFishingTag: "tag startedFishingTag"
-  finishedTag: "tag finishedTag"

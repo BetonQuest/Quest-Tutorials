@@ -1,0 +1,4 @@
+conditions:
+  isDay: "time 6-18"
+  hasReceivedFood: "tag foodReceived"
+  hasDoneTour: "tag tourDone"

@@ -7,6 +7,7 @@ conversations:
       firstGreeting:
         text: "Hello and welcome to my town traveler! Nice to see you. Where are you from?"
         pointer: "whereYouFrom"
+        conditions: "!hasReceivedFood"
       whoAmI:
         text: "I am &6Jack&r. The mayor of this beautiful town. We have some big farms and good old taverns well worth checking out! So now where are you from?"
         pointer: "smallIsland,bigCity"
@@ -18,7 +19,7 @@ conversations:
         pointer: "yesPlease"
       foodAnswer:
         text: "You're welcome! Take it... &7*gives food*"
-        events: "addFoodReceivedTag,giveFoodToPlayer"
+        events: "giveFoodToPlayer,addFoodReceivedTag"
         pointer: "thankYou"
         conditions: "!hasReceivedFood"
       alreadyReceivedFood:
@@ -30,16 +31,12 @@ conversations:
         pointer: "enoughTime,noTimeForThat"
       startTheTour:
         text: "Great! It is a honor for me to guide you through the town."
-        events: "tourAlreadyDoneTagAdd,townTour"
-        conditions: "!tourAlreadyDoneTag"
+        events: "townTour,addTourDoneTag"
       noProblem:
         text: "That's fine! Maybe you have time another day... Just talk to me again. See you!"
       tourAlreadyDone:
-        text: "How was the tour through this beautiful town?"
-        pointer: "veryNice"
-        conditions: "tourAlreadyDoneTag"
-      goodToHear:
-        text: "Good to hear that! It was a pleasure for me."
+        text: "I hope you enjoy your stay in our city!"
+        conditions: "hasDoneTour"
 
     player_options:
       whereYouFrom:
@@ -54,11 +51,11 @@ conversations:
       yesPlease:
         text: "Oh yes I'm starving! Thank you."
         pointer: "foodAnswer"
-      saySorry:
-        text: "You are right. Thanks again!"
-        pointer: "townTour"
       thankYou:
         text: "Oh that smells really good!"
+        pointer: "townTour"
+      saySorry:
+        text: "You are right. Thanks again!"
         pointer: "townTour"
       enoughTime:
         text: "Yes of course! Show me everything."
@@ -66,6 +63,3 @@ conversations:
       noTimeForThat:
         text: "Sorry, but I don't have time now..."
         pointer: "noProblem"
-      veryNice:
-        text: "It was great! I love your town!"
-        pointer: "goodToHear"

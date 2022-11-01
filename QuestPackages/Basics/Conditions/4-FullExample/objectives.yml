@@ -1,2 +1,0 @@
-objectives:
-  fishingObj: "fish cod 10 notify hookLocation:100;50;100;world range:20 events:caughtAllFish conditions:!isNight"

@@ -1,0 +1,7 @@
+npcs:
+  '1': "Jack"
+  '2': "Blacksmith"
+
+items:
+  steak: "COOKED_BEEF"
+  cod: "COD"

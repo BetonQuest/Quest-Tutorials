@@ -1,0 +1,7 @@
+conditions:
+  isDay: "time 6-18"
+  hasReceivedFood: "tag foodReceived"
+  hasDoneTour: "tag tourDone"
+  hasStartedFishing: "tag startedFishing"
+  hasFishInInv: "item cod:10"
+  hasDoneQuest: "tag questDone"
