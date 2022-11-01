@@ -8,6 +8,3 @@ events:
   startFishingObj: "objective start fishingObj"
   caughtAllFish: "notify You caught enough fish!\nReturn to the blacksmith! io:Title sound:firework_rocket"
   addFoodReceivedTag: "tag add foodReceived"
-
-  tourAlreadyDoneTagAdd: "tag add tourAlreadyDoneTag"
-  startedFishingTagAdd: "tag add startedFishingTag"
