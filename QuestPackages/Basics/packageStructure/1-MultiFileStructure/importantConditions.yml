@@ -1,0 +1,5 @@
+conditions:
+  woodcuttingDoneTag: "tag woodcuttingDoneTag"
+  logsInInventory: "item oakLog:10"
+  questDoneTag: "tag questDoneTag"
+  startedTag: "tag startedTag"
