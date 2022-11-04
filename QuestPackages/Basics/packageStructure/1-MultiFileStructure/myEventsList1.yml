@@ -1,0 +1,4 @@
+events:
+  questStarted: "folder startedTagAdd,addWoodcuttingObj"
+  startedTagAdd: "tag add startedTag"
+  addWoodcuttingObj: "objective add woodCuttingObj"

@@ -1,0 +1,6 @@
+npcs:
+  '0': "Jones"
+
+items:
+  oakLog: "minecraft:oak_log"
+  jewelry: "minecraft:diamond"
