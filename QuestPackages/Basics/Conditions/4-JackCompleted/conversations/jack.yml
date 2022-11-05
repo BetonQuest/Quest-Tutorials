@@ -7,7 +7,6 @@ conversations:
       firstGreeting:
         text: "Hello and welcome to my town traveler! Nice to see you. Where are you from?"
         pointer: "whereYouFrom"
-        conditions: "!hasReceivedFood"
       whoAmI:
         text: "I am &6Jack&r. The mayor of this beautiful town. We have some big farms and good old taverns well worth checking out! So now where are you from?"
         pointer: "smallIsland,bigCity"
