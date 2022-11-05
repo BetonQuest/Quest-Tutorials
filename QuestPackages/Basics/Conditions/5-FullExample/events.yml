@@ -10,6 +10,6 @@ events:
   addFoodReceivedTag: "tag add foodReceived"
   addTourDoneTag: "tag add tourDone"
   rewardPlayer: "give ironBoots,ironChestplate,ironLeggings,ironHelmet"
-  takeFishFromPlayer: "take cod:10"
+  takeFishFromPlayer: "take cod:3"
   addStartedFishingTag: "tag add startedFishing"
   addQuestDoneTag: "tag add questDone"

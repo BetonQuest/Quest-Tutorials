@@ -3,5 +3,5 @@ conditions:
   hasReceivedFood: "tag foodReceived"
   hasDoneTour: "tag tourDone"
   hasStartedFishing: "tag startedFishing"
-  hasFishInInv: "item cod:10"
+  hasFishInInv: "item cod:3"
   hasDoneQuest: "tag questDone"
