@@ -10,7 +10,7 @@ conversations:
         text: So every new citizens in our town will get a new armour from me but you have to do something for me in order to get this really nice upgrade!
         pointer: whatToDo
       collectFish:
-        text: You will have to fish 10 fresh cod for me and bring them to me. After that I will give you the nice new armour! Is that a deal?
+        text: You will have to fish 3 fresh cod for me and bring them to me. After that I will give you the nice new armour! Is that a deal?
         pointer: accept,deny
       maybeLater:
         text: No problem! You can comeback later aswell. Bye!
