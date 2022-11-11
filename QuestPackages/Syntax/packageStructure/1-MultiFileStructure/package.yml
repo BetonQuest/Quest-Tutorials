@@ -1,0 +1,6 @@
+npcs:
+  '0': "Jones"
+
+items:
+  oakLog: "minecraft:oak_log"
+  jonesAxe: "IRON_AXE name:§7Jones_Hardened_Axe enchants:DIG_SPEED:2,DURABILITY:4"
