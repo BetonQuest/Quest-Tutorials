@@ -3,7 +3,7 @@ npcs:
 
 items:
   oakLog: "minecraft:oak_log"
-  jewelry: "minecraft:diamond"
+  jonesAxe: "IRON_AXE name:§7Jones_Hardened_Axe enchants:DIG_SPEED:2,DURABILITY:4"
 
 conversations:
   Jones:
@@ -50,7 +50,7 @@ events:
 
   questDone: "folder takeWoodFromPlayer,rewardPlayer,addQuestDoneTag"
   takeWoodFromPlayer: "take oakLog:10"
-  rewardPlayer: "give jewelry:2"
+  rewardPlayer: "give jonesAxe"
   addQuestDoneTag: "tag add questDoneTag"
 
   addWoodcuttingDoneTag: "tag add woodcuttingDoneTag"

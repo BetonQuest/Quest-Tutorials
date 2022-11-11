@@ -1,0 +1,2 @@
+events:
+  hello: "notify Hello from the mining package!"

@@ -1,7 +1,7 @@
 events:
   questDone: "folder takeWoodFromPlayer,rewardPlayer,addQuestDoneTag"
   takeWoodFromPlayer: "take oakLog:10"
-  rewardPlayer: "give jewelry:2"
+  rewardPlayer: "give jonesAxe"
   addQuestDoneTag: "tag add questDoneTag"
 
   addWoodcuttingDoneTag: "tag add woodcuttingDoneTag"
