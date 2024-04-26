@@ -30,7 +30,7 @@ conversations:
         conditions: "hasFishInInv"
       goodbye:
         text: "It was nice to meet you! I hope we will see us soon again. Goodbye"
-      questDone: 
+      questDone:
         text: "Nice to see you again %player%!"
         conditions: "hasDoneQuest"
     player_options:
