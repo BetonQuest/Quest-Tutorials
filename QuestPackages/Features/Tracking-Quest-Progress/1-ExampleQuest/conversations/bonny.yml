@@ -1,0 +1,15 @@
+conversations:
+  Bonny:
+    quester: "Bonny"
+    first: "firstGreeting"
+    NPC_options:
+      firstGreeting:
+        text: "Hey Stranger! You look new to me. Can you introduce yourself?"
+        pointer: "introduce"
+      niceToMeetYou:
+        text: "Nice to meet you %player%. Please also introduce yourself to Joe and Fren and come back when 
+            you've done it!"
+    player_options:
+      introduce:
+        text: "I am %player%"
+        pointer: "niceToMeetYou"

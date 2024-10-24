@@ -1,0 +1,7 @@
+conversations:
+  Joe:
+    quester: "Joe"
+    first: "firstGreeting"
+    NPC_options:
+      firstGreeting:
+        text: "Hey %player% Bonny already told me about you! Nice to have you here in our town."

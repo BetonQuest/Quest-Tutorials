@@ -1,0 +1,26 @@
+conversations:
+  Bonny:
+    quester: "Bonny"
+    first: "startMainQuest,finishedTask,askingForProgress,firstGreeting"
+    NPC_options:
+      firstGreeting:
+        text: "Hey Stranger! You look new to me. Can you introduce yourself?"
+        pointer: "introduce"
+      niceToMeetYou:
+        text: "Nice to meet you %player%. Please also introduce yourself to Joe and Fren and come back when 
+            you've done it!"
+      askingForProgress:
+        text: "Hey %player% I think you don't have met them all yet.. Come back when you are ready!"
+        conditions: "!metJoe,!metFren,introducedToBonny"
+      finishedTask:
+        text: "You have met Joe and Fren! We are all there for you if you need something!"
+        conditions: "metJoe,metFren"
+        events: "addTagIntroducedToEveryone"
+      startMainQuest:
+        text: "Now I could need your help! Would you mind bringing me XXX?"
+        conditions: "introducedToEveryone"
+    player_options:
+      introduce:
+        text: "I am %player%"
+        pointer: "niceToMeetYou"
+        events: "addTagIntroducedToBonny"
