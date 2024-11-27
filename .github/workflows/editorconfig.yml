@@ -1,0 +1,14 @@
+name: EditorConfig Checker
+on: [ push, pull_request ]
+
+jobs:
+  editorconfig:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Activate lf line ending check in editorconfig
+        shell: bash --noprofile --norc -euo pipefail {0}
+        run: |
+          sed -i "s~\[\*\]~[*]\nend_of_line = lf~g" ./.editorconfig
+      - uses: editorconfig-checker/action-editorconfig-checker@main
+      - run: editorconfig-checker
