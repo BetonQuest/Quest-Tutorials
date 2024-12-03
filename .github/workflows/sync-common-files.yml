@@ -14,6 +14,6 @@ jobs:
       - name: Sync Common Files
         uses: BetonQuest/CommonProjectFiles@main
         with:
-          ignored-files: mvnw,mvnw.cmd,.mvn,.docs
+          ignored-files: mvnw,mvnw.cmd,.mvn,docs
           include-default-ignored-files: .github/workflows/editorconfig.yml
           token: ${{ secrets.ALL_REPOSITORIES_ACCESS_TOKEN }}
