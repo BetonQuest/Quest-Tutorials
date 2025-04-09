@@ -1,6 +1,9 @@
 npcs:
-  '1': "Jack"
-  '2': "Blacksmith"
+  Jack: "citizens 1"
+  BlacksmithNpc: "citizens 2"
+npc_conversations:
+  JackNpc: "Jack"
+  BlacksmithNpc: "Blacksmith"
 
 items:
   steak: "COOKED_BEEF"

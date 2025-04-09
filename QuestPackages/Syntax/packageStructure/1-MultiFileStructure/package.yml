@@ -1,5 +1,7 @@
 npcs:
-  '0': "Jones"
+  JonesNpc: "citizens 0"
+npc_conversations:
+  JonesNpc: "Jones"
 
 items:
   oakLog: "minecraft:oak_log"

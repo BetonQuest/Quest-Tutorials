@@ -1,7 +1,9 @@
 variables:
   block: '.*_LOG'
 npcs:
-  '0': innkeeper
+  innkeeperNpc: "citizens 0"
+npc_conversations:
+  innkeeperNpc: innkeeper
 cancel:
   wood:
     name:
