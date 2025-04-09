@@ -1,2 +1,4 @@
 npcs:
-  '1': "Jack"
+  Jack: "citizens 1"
+npc_conversations:
+  JackNpc: "Jack"
