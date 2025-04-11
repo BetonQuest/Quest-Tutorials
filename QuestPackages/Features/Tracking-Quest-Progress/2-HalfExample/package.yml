@@ -1,7 +1,7 @@
 npcs:
   JoeNpc: "citizens 1"
-  Bonny: "citizens 2"
-  Fren: "citizens 3"
+  BonnyNpc: "citizens 2"
+  FrenNpc: "citizens 3"
 npc_conversations:
   JoeNpc: "Joe"
   BonnyNpc: "Bonny"

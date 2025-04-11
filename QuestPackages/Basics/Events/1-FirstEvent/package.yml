@@ -1,5 +1,5 @@
 npcs:
-  Jack: "citizens 1"
+  JackNpc: "citizens 1"
 npc_conversations:
   JackNpc: "Jack"
 
