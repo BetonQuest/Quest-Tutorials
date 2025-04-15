@@ -6,4 +6,4 @@ npc_conversations:
   BlacksmithNpc: "Blacksmith"
 
 items:
-  steak: "COOKED_BEEF"
+  steak: "simple COOKED_BEEF"
