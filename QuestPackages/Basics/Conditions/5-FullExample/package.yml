@@ -6,9 +6,9 @@ npc_conversations:
   BlacksmithNpc: "Blacksmith"
 
 items:
-  steak: "COOKED_BEEF"
-  cod: "COD"
-  ironHelmet: "IRON_HELMET"
-  ironChestplate: "IRON_CHESTPLATE"
-  ironLeggings: "IRON_LEGGINGS"
-  ironBoots: "IRON_BOOTS"
+  steak: "simple COOKED_BEEF"
+  cod: "simple COD"
+  ironHelmet: "simple IRON_HELMET"
+  ironChestplate: "simple IRON_CHESTPLATE"
+  ironLeggings: "simple IRON_LEGGINGS"
+  ironBoots: "simple IRON_BOOTS"

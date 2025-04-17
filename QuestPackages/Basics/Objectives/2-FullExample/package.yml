@@ -6,5 +6,5 @@ npc_conversations:
   BlacksmithNpc: "Blacksmith"
 
 items:
-  steak: "COOKED_BEEF"
-  cod: "COD"
+  steak: "simple COOKED_BEEF"
+  cod: "simple COD"

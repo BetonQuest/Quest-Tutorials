@@ -4,4 +4,4 @@ npc_conversations:
   JackNpc: "Jack"
 
 items:
-  steak: "COOKED_BEEF"
+  steak: "simple COOKED_BEEF"
