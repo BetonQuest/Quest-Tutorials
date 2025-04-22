@@ -5,7 +5,7 @@ conversations:
     NPC_options:
       firstGreeting:
         text: "Hey %player%. Already know you because Bonny told me about you and that you're new here!"
-        pointer: "introduce"
+        pointers: "introduce"
         conditions: "introducedToBonny"
       niceToMeetYou:
         text: "Nice to meet you tho! I really like new people in our town!"
@@ -15,5 +15,5 @@ conversations:
     player_options:
       introduce:
         text: "That's correct!"
-        pointer: "niceToMeetYou"
+        pointers: "niceToMeetYou"
         events: "addTagMetFren"

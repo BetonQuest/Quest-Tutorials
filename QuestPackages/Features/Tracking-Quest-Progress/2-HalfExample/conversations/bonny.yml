@@ -5,7 +5,7 @@ conversations:
     NPC_options:
       firstGreeting:
         text: "Hey Stranger! You look new to me. Can you introduce yourself?"
-        pointer: "introduce"
+        pointers: "introduce"
       niceToMeetYou:
         text: "Nice to meet you %player%. Please also introduce yourself to Joe and Fren and come back when 
             you've done it!"
@@ -18,5 +18,5 @@ conversations:
     player_options:
       introduce:
         text: "I am %player%"
-        pointer: "niceToMeetYou"
+        pointers: "niceToMeetYou"
         events: "addTagIntroducedToBonny"
