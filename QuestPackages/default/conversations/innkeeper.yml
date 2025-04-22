@@ -23,7 +23,7 @@ conversations:
           nl: 'Welkom in mijn herberg, %player%! Wat kan ik voor je doen?'
           hu: 'Üdvözöljük a vendégemben %player%! Mit tehetek önért?'
         conditions: '!wood_started'
-        pointer: 'questions,quests,bye'
+        pointers: 'questions,quests,bye'
       'back':
         text:
           en: 'Yes?'
@@ -34,7 +34,7 @@ conversations:
           de: 'Ja?'
           nl: 'Ja?'
           hu: 'Igen?'
-        pointer: 'questions,quests,wood_questions,wood_done,more_quests,bye'
+        pointers: 'questions,quests,wood_questions,wood_done,more_quests,bye'
       'start_wood_started':
         text:
           en: 'Welcome back! How is it going with that wood?'
@@ -46,7 +46,7 @@ conversations:
           nl: 'Welkom terug! Hoe gaat het met dat hout?'
           hu: 'Üdv újra! Hogy megy ez a fa?'
         conditions: 'wood_started,!wood_paid'
-        pointer: 'questions,wood_questions,wood_done,bye'
+        pointers: 'questions,wood_questions,wood_done,bye'
       'start_wood_completed':
         text:
           en: 'Ah, my favorite customer! How can I help?'
@@ -58,7 +58,7 @@ conversations:
           nl: 'Ah, mijn favoriete klant! Hoe kan ik je helpen?'
           hu: 'Ah, kedvenc ügyfelem! Hogyan segíthetek?'
         conditions: 'wood_paid'
-        pointer: 'questions,more_quests,bye'
+        pointers: 'questions,more_quests,bye'
       'quest_wood':
         text:
           en: 'I was making new mugs for beer but I ran out of wood. Can you bring me some from the nearby forest?'
@@ -69,7 +69,7 @@ conversations:
           de: 'Ich wollte gerade neue Bierkruege herstellen, aber ich habe kein Holz mehr. Kannst du mir welches aus dem nahen Wald holen?'
           nl: 'Ik was nieuwe mokken voor bier aan het maken, maar ik heb geen hout meer. Kun je me wat van het dichtbij gelegen bos halen?'
           hu: 'Új bögréket készítettem a sörért, de fából faragtam. Tudsz hozni nekem valamit a közeli erdőből?'
-        pointer: 'wood_yes,wood_no'
+        pointers: 'wood_yes,wood_no'
       'questions':
         text:
           en: 'I''ll answer as best I can.'
@@ -80,7 +80,7 @@ conversations:
           de: 'Ich werde so gut es geht antworten.'
           nl: 'Ik zal zo goed mogelijk antwoorden.'
           hu: 'A lehető legjobban válaszolok.'
-        pointer: 'wood_where,wood_how,wood_with_what,no_questions'
+        pointers: 'wood_where,wood_how,wood_with_what,no_questions'
       'wood_reward':
         text:
           en: 'Excellent! Here are 5 emeralds for you!'
@@ -93,7 +93,7 @@ conversations:
           hu: 'Kiváló! Itt van 5 smaragd számodra!'
         conditions: 'has_wood'
         events: 'wood_reward,remove_wood,tag_wood_paid,entry_wood_paid'
-        pointer: 'questions,more_quests,bye'
+        pointers: 'questions,more_quests,bye'
       'wood_doesnt_have':
         text:
           en: 'Where? I can''t see anything in your inventory...'
@@ -105,7 +105,7 @@ conversations:
           nl: 'Waar? Ik zie niets in je inventaris...'
           hu: 'Ahol? Nem látok semmit az eszköztáradban...'
         conditions: '!has_wood'
-        pointer: 'now,wood_go,questions'
+        pointers: 'now,wood_go,questions'
       'no_quests':
         text:
           en: 'Unfortunately I don''t have anything else for you. Come back later.'
@@ -116,7 +116,7 @@ conversations:
           de: 'Leider habe ich zur Zeit keine weiteren Aufgaben. Schau spaeter noch mal vorbei.'
           nl: 'Helaas heb ik niets anders. Kom later nog eens terug.'
           hu: 'Sajnos nincs más dolgom. Gyere vissza később.'
-        pointer: 'questions,bye'
+        pointers: 'questions,bye'
       'wood_yes':
         text:
           en: 'Great. Go to the forest and bring me some wood.'
@@ -127,7 +127,7 @@ conversations:
           de: 'Sehr gut. Geh in den Wald und bring mit etwas Holz.'
           nl: 'Fantastisch. Ga naar het bos en breng me wat hout.'
           hu: 'Nagy. Menj az erdőbe, és vigyen nekem valamit.'
-        pointer: 'wood_go,wood_questions,back'
+        pointers: 'wood_go,wood_questions,back'
       'wood_no':
         text:
           en: 'That''s a shame.'
@@ -148,7 +148,7 @@ conversations:
           de: 'Verlasse das Dorf durch das Suedtor und geh nach links. Dann kommst du zum Wald.'
           nl: 'Verlaat het dorp via de zuidpoort en ga linksaf. Daar is het bos.'
           hu: 'Menjen ki a falutól a déli kapun keresztül, és forduljon balra. Erdő van.'
-        pointer: 'wood_how,wood_with_what,no_questions'
+        pointers: 'wood_how,wood_with_what,no_questions'
       'wood_how':
         text:
           en: 'Stand in front of the tree and start punching it until a block of wood pops out. It''s that simple.'
@@ -159,7 +159,7 @@ conversations:
           de: 'Stell dich vor einen Baum und schlage ihn, bis ein Holzblock herauskommt. So einfach ist es.'
           nl: 'Ga voor de boom staan en begin het te stompen totdat er een blok hout uitkomt. Zo eenvoudig is het.'
           hu: 'Álljunk a fa előtt és kezdjük lyukasztani, amíg a fák egy blokkja ki nem nyílik. Ez olyan egyszerű.'
-        pointer: 'wood_where,wood_with_what,no_questions'
+        pointers: 'wood_where,wood_with_what,no_questions'
       'wood_with_what':
         text:
           en: 'You can search the lumberjack''s hut. I''m sure you''ll find some axes in there.'
@@ -170,7 +170,7 @@ conversations:
           de: 'Schau mal in der Holzfaellerhuette. Ich bin mir sicher, dass du dort ein paar Aexte finden wirst.'
           nl: 'Kijk eens in de hut van de houthakker. Ik weet zeker dat je daar een paar bijlen kunt vinden.'
           hu: 'Kereshet a luberjack kunyhójában. Biztos vagyok benne, hogy találsz néhány baltát.'
-        pointer: 'wood_where,wood_how,no_questions'
+        pointers: 'wood_where,wood_how,no_questions'
       'no_questions':
         text:
           en: 'I hope I helped.'
@@ -181,7 +181,7 @@ conversations:
           de: 'Ich hoffe, ich konnte helfen.'
           nl: 'Ik hoop dat ik je geholpen heb.'
           hu: 'Remélem, segítettem.'
-        pointer: 'wood_go,back'
+        pointers: 'wood_go,back'
       'wood_go':
         text:
           en: 'Good luck!'
@@ -213,7 +213,7 @@ conversations:
           de: 'Zurueck zum Inhalt...'
           nl: 'Terug naar het onderwerp...'
           hu: 'Vissza a témához...'
-        pointer: 'back'
+        pointers: 'back'
       'quests':
         text:
           en: 'Do you have some quests? I need money.'
@@ -225,7 +225,7 @@ conversations:
           nl: 'Heb je misschien wat quests voor mij? Ik heb geld nodig.'
           hu: 'Van néhány küldetésed? Pénzre van szükségem.'
         conditions: '!wood_started'
-        pointer: 'quest_wood'
+        pointers: 'quest_wood'
       'wood_questions':
         text:
           en: 'I have some questions about this woodcutting.'
@@ -237,7 +237,7 @@ conversations:
           nl: 'Ik heb wat vragen over dit houthakken.'
           hu: 'Van néhány kérdésem a fafeldolgozásról.'
         conditions: 'wood_started,!wood_paid'
-        pointer: 'questions'
+        pointers: 'questions'
       'wood_done':
         text:
           en: 'I collected all the wood.'
@@ -249,7 +249,7 @@ conversations:
           nl: 'Ik heb al het hout verzameld.'
           hu: 'Összegyűjtöttem az összes fát.'
         conditions: 'wood_done,has_wood,!wood_paid'
-        pointer: 'wood_reward,wood_doesnt_have'
+        pointers: 'wood_reward,wood_doesnt_have'
       'more_quests':
         text:
           en: 'Do you have some other quests?'
@@ -261,7 +261,7 @@ conversations:
           nl: 'Heb je misschien nog andere quests?'
           hu: 'Van még néhány küldetésed?'
         conditions: 'wood_paid'
-        pointer: 'no_quests'
+        pointers: 'no_quests'
       'wood_yes':
         text:
           en: 'Sounds okay.'
@@ -273,7 +273,7 @@ conversations:
           nl: 'Klinkt goed.'
           hu: 'Rendben van.'
         events: 'wood_start,tag_wood_started,entry_wood_started'
-        pointer: 'wood_yes'
+        pointers: 'wood_yes'
       'wood_no':
         text:
           en: 'On the other hand, I don''t want that money.'
@@ -284,7 +284,7 @@ conversations:
           de: 'Mh, andererseits brauche ich das Geld doch nicht so dringend.'
           nl: 'Bij nader inzien, heb ik dat geld toch niet nodig.'
           hu: 'Másrészt nem akarom ezt a pénzt.'
-        pointer: 'wood_no'
+        pointers: 'wood_no'
       'wood_where':
         text:
           en: 'Where is the forest?'
@@ -295,7 +295,7 @@ conversations:
           de: 'Wo ist der Wald?'
           nl: 'Waar is het bos?'
           hu: 'Hol van az erdő?'
-        pointer: 'wood_where'
+        pointers: 'wood_where'
       'wood_how':
         text:
           en: 'How can I chop wood?'
@@ -306,7 +306,7 @@ conversations:
           de: 'Wie kann ich Holz faellen?'
           nl: 'Hoe kan ik hout hakken?'
           hu: 'Hogyan vághatom le a fát?'
-        pointer: 'wood_how'
+        pointers: 'wood_how'
       'wood_with_what':
         text:
           en: 'With what should I chop wood?'
@@ -317,7 +317,7 @@ conversations:
           de: 'Womit kann ich Holz faellen?'
           nl: 'Waarmee kan ik hout hakken?'
           hu: 'Mire kell szétszedni a fát?'
-        pointer: 'wood_with_what'
+        pointers: 'wood_with_what'
       'no_questions':
         text:
           en: 'I don''t have questions.'
@@ -328,7 +328,7 @@ conversations:
           de: 'Ich habe keine Fragen.'
           nl: 'Ik heb geen vragen.'
           hu: 'Nincsenek kérdések'
-        pointer: 'no_questions'
+        pointers: 'no_questions'
       'wood_go':
         text:
           en: 'Ok, so I''m going to cut some trees.'
@@ -339,7 +339,7 @@ conversations:
           de: 'Ok, dann gehe ich mal ein paar Baeume faellen.'
           nl: 'Ok, dan ga ik maar een paar bomen omhakken.'
           hu: 'Oké, ezért vágok néhány fát.'
-        pointer: 'wood_go'
+        pointers: 'wood_go'
       'now':
         text:
           en: 'What about now?'
@@ -350,7 +350,7 @@ conversations:
           de: 'Wie ist es jetzt?'
           nl: 'En nu?'
           hu: 'És most?'
-        pointer: 'wood_reward,wood_doesnt_have'
+        pointers: 'wood_reward,wood_doesnt_have'
       'bye':
         text:
           en: 'Bye.'

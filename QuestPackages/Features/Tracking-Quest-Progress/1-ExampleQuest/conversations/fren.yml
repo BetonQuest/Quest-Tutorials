@@ -5,10 +5,10 @@ conversations:
     NPC_options:
       firstGreeting:
         text: "Hey %player%. Already know you because bonny told me about you and that you're new here!"
-        pointer: "introduce"
+        pointers: "introduce"
       niceToMeetYou:
         text: "Nice to meet you tho! I really like new people in our town!"
     player_options:
       introduce:
         text: "That's correct!"
-        pointer: "niceToMeetYou"
+        pointers: "niceToMeetYou"

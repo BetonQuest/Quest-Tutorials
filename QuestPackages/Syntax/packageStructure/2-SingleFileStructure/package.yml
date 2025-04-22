@@ -14,10 +14,10 @@ conversations:
     NPC_options:
       firstGreeting:
         text: "Yoo! You look like you can handle those heavy axes to cut down some trees..?"
-        pointer: "probably"
+        pointers: "probably"
       woodAmountAnswer:
         text: "Bring me 20 logs of oak and you will get my special axe for woodcutting!"
-        pointer: "letsDoIt"
+        pointers: "letsDoIt"
       seeYou:
         text: "See you soon!"
       noWoodInInv:
@@ -39,10 +39,10 @@ conversations:
     player_options:
       probably:
         text: "Yes I can do that for you! How much wood do you need?"
-        pointer: "woodAmountAnswer"
+        pointers: "woodAmountAnswer"
       letsDoIt:
         text: "Alright let's get the job done!"
-        pointer: "seeYou"
+        pointers: "seeYou"
         events: "questStarted"
 
 events:
