@@ -1,4 +1,4 @@
-variables:
+constants:
   block: '.*_LOG'
 npcs:
   innkeeperNpc: "citizens 0"
