@@ -7,13 +7,13 @@ npc_conversations:
 cancel:
   wood:
     name:
-      en: '&2Wood_for_Innkeeper'
-      pl: '&2Drewno_dla_Karczmarza'
-      cn: '&2\u65c5\u5e97\u4e4b\u6728'
-      es: '&2Madera_para_el_Tabernero'
-      de: '&2Holz_fuer_den_Gastwirt'
-      fr: '&2Bois_pour_Aubergiste'
-      hu: '&2Fa_az_Innkeeper_számára'
+      en-US: '&2Wood_for_Innkeeper'
+      pl-PL: '&2Drewno_dla_Karczmarza'
+      zh-CN: '&2\u65c5\u5e97\u4e4b\u6728'
+      es-ES: '&2Madera_para_el_Tabernero'
+      de-DE: '&2Holz_fuer_den_Gastwirt'
+      fr-FR: '&2Bois_pour_Aubergiste'
+      hu-HU: '&2Fa_az_Innkeeper_számára'
     conditions: wood_started,!wood_paid
     objectives: wood
     tags: wood_started,wood_done,wood_paid
@@ -22,12 +22,12 @@ journal_main_page:
   greeting:
     priority: 1
     text:
-      pl: 'Ukonczyles zadanie dla Karczmarza!'
-      en: 'You have completed a quest for the Innkeeper!'
-      de: 'Du hast eine Quest fuer den Gastwirt beendet!'
-      fr: 'Vous venez de terminer une quete de l''aubergiste!'
-      cn: '\u4f60\u5b8c\u6210\u4e86\u65c5\u9986\u8001\u677f\u7684\u4efb\u52a1!'
-      es: 'Has completado una mision para el tabernero!'
-      nl: 'Je hebt een quest afgerond voor Herbergier!'
-      hu: 'Elvégezte az Innkeeper küldetését!'
+      pl-PL: 'Ukonczyles zadanie dla Karczmarza!'
+      en-US: 'You have completed a quest for the Innkeeper!'
+      de-DE: 'Du hast eine Quest fuer den Gastwirt beendet!'
+      fr-FR: 'Vous venez de terminer une quete de l''aubergiste!'
+      zh-CN: '\u4f60\u5b8c\u6210\u4e86\u65c5\u9986\u8001\u677f\u7684\u4efb\u52a1!'
+      es-ES: 'Has completado una mision para el tabernero!'
+      nl-NL: 'Je hebt een quest afgerond voor Herbergier!'
+      hu-HU: 'Elvégezte az Innkeeper küldetését!'
     conditions: 'wood_paid'
