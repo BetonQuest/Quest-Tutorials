@@ -92,7 +92,7 @@ conversations:
           nl-NL: 'Uitstekend! Hier zijn 5 smaragden voor jou!'
           hu-HU: 'Kiváló! Itt van 5 smaragd számodra!'
         conditions: 'has_wood'
-        events: 'wood_reward,remove_wood,tag_wood_paid,entry_wood_paid'
+        actions: 'wood_reward,remove_wood,tag_wood_paid,entry_wood_paid'
         pointers: 'questions,more_quests,bye'
       'wood_doesnt_have':
         text:
@@ -272,7 +272,7 @@ conversations:
           de-DE: 'Klingt gut.'
           nl-NL: 'Klinkt goed.'
           hu-HU: 'Rendben van.'
-        events: 'wood_start,tag_wood_started,entry_wood_started'
+        actions: 'wood_start,tag_wood_started,entry_wood_started'
         pointers: 'wood_yes'
       'wood_no':
         text:

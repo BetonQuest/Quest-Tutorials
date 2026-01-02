@@ -16,4 +16,4 @@ conversations:
       introduce:
         text: "That's correct!"
         pointers: "niceToMeetYou"
-        events: "addTagMetFren"
+        actions: "addTagMetFren"

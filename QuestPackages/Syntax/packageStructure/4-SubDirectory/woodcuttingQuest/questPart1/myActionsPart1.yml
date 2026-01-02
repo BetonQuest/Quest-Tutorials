@@ -1,0 +1,2 @@
+actions:
+  hello1: "notify Hello from myActionsPart1.yml!"

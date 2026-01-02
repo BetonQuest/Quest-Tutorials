@@ -15,7 +15,7 @@ conversations:
       finishedTask:
         text: "You have met Joe and Fren! We are all there for you if you need something!"
         conditions: "metJoe,metFren"
-        events: "addTagIntroducedToEveryone"
+        actions: "addTagIntroducedToEveryone"
       startMainQuest:
         text: "Now I could need your help! Would you mind bringing me XXX?"
         conditions: "introducedToEveryone"
@@ -23,4 +23,4 @@ conversations:
       introduce:
         text: "I am %player%"
         pointers: "niceToMeetYou"
-        events: "addTagIntroducedToBonny"
+        actions: "addTagIntroducedToBonny"

@@ -25,7 +25,7 @@ conversations:
         pointers: "collectFish"
       accept:
         text: "Sure! I could use a new armour."
-        events: "startFishingObj"
+        actions: "startFishingObj"
         pointers: "goodLuck"
       deny:
         text: "I dont have time right now."

@@ -1,2 +1,2 @@
 objectives:
-  fishingObj: "fish cod 3 notify hookLocation:100;63;100;world range:20 events:caughtAllFish"
+  fishingObj: "fish cod 3 notify hookLocation:100;63;100;world range:20 actions:caughtAllFish"

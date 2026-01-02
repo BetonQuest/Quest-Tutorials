@@ -19,4 +19,4 @@ conversations:
       introduce:
         text: "I am %player%"
         pointers: "niceToMeetYou"
-        events: "addTagIntroducedToBonny"
+        actions: "addTagIntroducedToBonny"

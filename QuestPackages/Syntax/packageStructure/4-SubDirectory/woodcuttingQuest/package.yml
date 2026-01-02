@@ -1,2 +1,2 @@
-events:
+actions:
   hello3: "notify Hello from package.yml!"
