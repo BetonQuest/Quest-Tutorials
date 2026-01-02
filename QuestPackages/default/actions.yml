@@ -1,4 +1,4 @@
-events:
+actions:
   wood_start: 'objective start wood'
   tag_wood_started: 'tag add wood_started'
   tag_wood_done: 'tag add wood_done'

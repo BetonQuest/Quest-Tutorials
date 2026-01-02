@@ -1,2 +1,2 @@
-events:
+actions:
   giveFoodToPlayer: "give steak:16"

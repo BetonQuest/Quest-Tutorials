@@ -1,2 +1,2 @@
 objectives:
-  woodCuttingObj: "block OAK_LOG -10 notify events:addWoodcuttingDoneTag"
+  woodCuttingObj: "block OAK_LOG -10 notify actions:addWoodcuttingDoneTag"

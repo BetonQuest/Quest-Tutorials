@@ -18,14 +18,14 @@ conversations:
         pointers: "yesPlease"
       foodAnswer:
         text: "You're welcome! Take it... &7*gives food*"
-        events: "giveFoodToPlayer"
+        actions: "giveFoodToPlayer"
         pointers: "thankYou"
       townTour:
         text: "Yeah that's true. You know what also smells good? The fresh air in my town! Would you like to take a little tour?"
         pointers: "enoughTime,noTimeForThat"
       startTheTour:
         text: "Great! It is a honor for me to guide you through the town."
-        events: "townTour"
+        actions: "townTour"
       noProblem:
         text: "That's fine! Maybe you have time another day... Just talk to me again. See you!"
 
