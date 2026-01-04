@@ -1,4 +1,4 @@
-events:
+actions:
   giveFoodToPlayer: "give steak:16"
   townTour: "folder tpLocation1,tpLocation2,tpLocation3,tpBlacksmith delay:2 period:5"
   tpLocation1: "teleport 100;70;100;world"

@@ -1,4 +1,4 @@
-events:
+actions:
   giveFoodToPlayer: "give steak:16"
   townTour: "folder tpLocation1,tpLocation2,tpLocation3,tpBlacksmith delay:2 period:5"
   tpLocation1: "teleport 100;70;100;world"
@@ -8,3 +8,8 @@ events:
   startFishingObj: "objective start fishingObj"
   caughtAllFish: "notify You caught enough fish!\nReturn to the blacksmith! io:Title sound:firework_rocket"
   addFoodReceivedTag: "tag add foodReceived"
+  addTourDoneTag: "tag add tourDone"
+  rewardPlayer: "give ironBoots,ironChestplate,ironLeggings,ironHelmet"
+  takeFishFromPlayer: "take cod:3"
+  addStartedFishingTag: "tag add startedFishing"
+  addQuestDoneTag: "tag add questDone"

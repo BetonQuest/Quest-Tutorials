@@ -18,7 +18,7 @@ conversations:
         pointers: "yesPlease"
       foodAnswer:
         text: "You're welcome! Take it... &7*gives food*"
-        events: "giveFoodToPlayer,addFoodReceivedTag"
+        actions: "giveFoodToPlayer,addFoodReceivedTag"
         pointers: "thankYou"
         conditions: "!hasReceivedFood"
       alreadyReceivedFood:
@@ -30,7 +30,7 @@ conversations:
         pointers: "enoughTime,noTimeForThat"
       startTheTour:
         text: "Great! It is a honor for me to guide you through the town."
-        events: "townTour,addTourDoneTag"
+        actions: "townTour,addTourDoneTag"
       noProblem:
         text: "That's fine! Maybe you have time another day... Just talk to me again. See you!"
       tourAlreadyDone:

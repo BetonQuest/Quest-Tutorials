@@ -1,4 +1,4 @@
-events:
+actions:
   questDone: "folder takeWoodFromPlayer,rewardPlayer,addQuestDoneTag"
   takeWoodFromPlayer: "take oakLog:10"
   rewardPlayer: "give jonesAxe"
