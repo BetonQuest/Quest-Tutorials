@@ -22,7 +22,7 @@ conversations:
         conditions: "startedTag,!woodcuttingDoneTag,!logsInInventory"
       questDone:
         text: "That's the wood I was looking for! Thank you so much! Here is my special axe for my special friend."
-        events: "questDone"
+        actions: "questDone"
         conditions: "woodcuttingDoneTag,logsInInventory"
       questAlreadyDone:
         text: "Hey! I don't need you anymore. Thanks again for the help."
@@ -34,4 +34,4 @@ conversations:
       letsDoIt:
         text: "Alright let's get the job done!"
         pointers: "seeYou"
-        events: "questStarted"
+        actions: "questStarted"
