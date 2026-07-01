@@ -1,0 +1,8 @@
+npcs:
+  JoeNpc: "citizens 1"
+  BonnyNpc: "citizens 2"
+  FrenNpc: "citizens 3"
+npc_conversations:
+  JoeNpc: "Joe"
+  BonnyNpc: "Bonny"
+  FrenNpc: "Fren"

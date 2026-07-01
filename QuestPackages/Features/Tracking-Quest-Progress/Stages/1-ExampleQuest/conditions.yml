@@ -1,0 +1,12 @@
+conditions:
+  introductionsActive: "objective townIntroductions"
+
+  stageMeetJoe: "stage townIntroductions = meetJoe"
+  stageMeetFren: "stage townIntroductions = meetFren"
+  stageReturnToBonny: "stage townIntroductions = returnToBonny"
+  stageFinished: "stage townIntroductions = finished"
+
+  hasReachedFren: "stage townIntroductions >= meetFren"
+  needsMoreIntroductions: "or stageMeetJoe,stageMeetFren"
+  joeAlreadyMet: "or stageMeetFren,stageReturnToBonny,stageFinished"
+  frenAlreadyMet: "or stageReturnToBonny,stageFinished"

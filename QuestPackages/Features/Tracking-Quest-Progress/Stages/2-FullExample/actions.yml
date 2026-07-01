@@ -1,0 +1,10 @@
+actions:
+  startIntroductions: "objective add townIntroductions"
+  goToJoe: "stage townIntroductions set meetJoe"
+  goToFren: "stage townIntroductions set meetFren"
+  goBackToBonny: "stage townIntroductions set returnToBonny"
+  finishIntroductions: "stage townIntroductions set finished"
+  resetIntroductions: "objective remove townIntroductions"
+  showCurrentStage: "notify &7Current stage: &e%objective.townIntroductions.current%"
+  showNextStage: "notify &7Next stage: &e%objective.townIntroductions.next%"
+  showStageIndex: "notify &7Stage index: &e%objective.townIntroductions.index%"
