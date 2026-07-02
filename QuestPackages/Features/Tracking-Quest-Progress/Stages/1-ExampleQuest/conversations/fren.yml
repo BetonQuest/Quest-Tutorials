@@ -1,0 +1,15 @@
+conversations:
+  Fren:
+    quester: "Fren"
+    first: "alreadyMetFren,meetFren,notReady"
+    NPC_options:
+      meetFren:
+        text: "I heard you are new here. Go back to Bonny when you are ready."
+        conditions: "stageMeetFren"
+        actions: "goBackToBonny"
+      alreadyMetFren:
+        text: "Bonny wanted to see you again."
+        conditions: "frenAlreadyMet"
+      notReady:
+        text: "Bonny and Joe can help you first."
+        conditions: "!introductionsActive"

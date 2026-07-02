@@ -1,0 +1,6 @@
+actions:
+  startIntroductions: "objective add townIntroductions"
+  goToJoe: "stage townIntroductions set meetJoe"
+  goToFren: "stage townIntroductions set meetFren"
+  goBackToBonny: "stage townIntroductions set returnToBonny"
+  finishIntroductions: "stage townIntroductions set finished"

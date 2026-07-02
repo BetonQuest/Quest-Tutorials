@@ -1,0 +1,15 @@
+conversations:
+  Joe:
+    quester: "Joe"
+    first: "alreadyMetJoe,meetJoe,notReady"
+    NPC_options:
+      meetJoe:
+        text: "Bonny sent you? Nice to meet you. You should talk to Fren next."
+        conditions: "stageMeetJoe"
+        actions: "goToFren"
+      alreadyMetJoe:
+        text: "We already met. Fren is waiting for you."
+        conditions: "joeAlreadyMet"
+      notReady:
+        text: "You should talk to Bonny first."
+        conditions: "!introductionsActive"

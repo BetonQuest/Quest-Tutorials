@@ -1,0 +1,19 @@
+conversations:
+  Bonny:
+    quester: "Bonny"
+    first: "finished,returnToBonny,continueIntro,startIntro"
+    NPC_options:
+      startIntro:
+        text: "Hey stranger! Please introduce yourself to Joe and Fren, then come back to me."
+        conditions: "!introductionsActive"
+        actions: "startIntroductions,goToJoe"
+      continueIntro:
+        text: "You still need to introduce yourself to everyone. Come back when you are done."
+        conditions: "needsMoreIntroductions"
+      returnToBonny:
+        text: "Great, you met both of them. Welcome to our town!"
+        conditions: "stageReturnToBonny"
+        actions: "finishIntroductions"
+      finished:
+        text: "Good to see you again. Everyone knows you now."
+        conditions: "stageFinished"
