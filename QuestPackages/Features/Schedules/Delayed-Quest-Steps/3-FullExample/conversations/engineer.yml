@@ -1,0 +1,39 @@
+conversations:
+  Engineer:
+    quester: "Engineer"
+    first: "inspectionReady,alreadyDonated,donateStone,missingStone,intro"
+    NPC_options:
+      intro:
+        text: "The bridge is almost ready, but I need stone donations before tonight's inspection."
+        pointers: "askHow"
+        conditions: "!bridgeInspectionOpen"
+      explain:
+        text: "Bring me cobblestone. At 18:00 I will close donations and inspect the bridge."
+      donateStone:
+        text: "If you have 16 cobblestone, I can use it for the bridge supports."
+        pointers: "donate"
+        conditions: "!donatedBridgeStone,!bridgeInspectionOpen,hasBridgeStoneItems"
+      missingStone:
+        text: "Bring me 16 cobblestone and I can use it for the bridge supports."
+        conditions: "!donatedBridgeStone,!bridgeInspectionOpen,!hasBridgeStoneItems"
+      alreadyDonated:
+        text: "Your stone is already counted. Current bridge stock: %globalpoint.bridgeStone.amount%."
+        conditions: "donatedBridgeStone,!bridgeInspectionOpen"
+      inspectionReady:
+        text: "Donations are closed. We collected %globalpoint.bridgeStone.amount% cobblestone. Can you inspect the bridge?"
+        conditions: "bridgeInspectionOpen,!bridgeInspectionDone"
+        pointers: "inspect"
+      inspected:
+        text: "Thanks for checking the bridge. We can open it safely."
+        conditions: "bridgeInspectionDone"
+    player_options:
+      askHow:
+        text: "How can I help?"
+        pointers: "explain"
+      donate:
+        text: "Take this cobblestone."
+        conditions: "hasBridgeStoneItems"
+        actions: "donateBridgeStone"
+      inspect:
+        text: "The bridge looks stable."
+        actions: "finishBridgeInspection"

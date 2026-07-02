@@ -1,0 +1,2 @@
+objectives:
+  collectMeteorFragments: "pickup meteorFragment amount:1 notify actions:addMeteorFragment persistent"

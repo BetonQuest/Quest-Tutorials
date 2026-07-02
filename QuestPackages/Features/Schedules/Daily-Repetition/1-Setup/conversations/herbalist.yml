@@ -1,0 +1,14 @@
+conversations:
+  Herbalist:
+    quester: "Herbalist"
+    first: "startQuest"
+    NPC_options:
+      startQuest:
+        text: "The garden grows back every morning. Could you gather three oak logs for today's remedies?"
+        pointers: "acceptQuest"
+      questStarted:
+        text: "Thank you. Bring me three oak logs and I will pay you with an emerald."
+    player_options:
+      acceptQuest:
+        text: "I will gather them."
+        pointers: "questStarted"

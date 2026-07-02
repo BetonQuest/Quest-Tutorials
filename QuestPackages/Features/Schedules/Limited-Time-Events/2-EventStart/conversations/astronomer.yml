@@ -1,0 +1,7 @@
+conversations:
+  Astronomer:
+    quester: "Astronomer"
+    first: "waiting"
+    NPC_options:
+      waiting:
+        text: "The sky is calm right now. Come back when the meteor shower begins."

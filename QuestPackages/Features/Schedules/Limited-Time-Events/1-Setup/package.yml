@@ -1,0 +1,5 @@
+npcs:
+  AstronomerNpc: "citizens 33"
+
+npc_conversations:
+  AstronomerNpc: "Astronomer"

@@ -1,0 +1,12 @@
+actions:
+  donateBridgeStone: "folder takeBridgeStone,addBridgeStonePoint,addDonatedBridgeStone,notifyDonation"
+  takeBridgeStone: "take bridgeStone:16 abort"
+  addBridgeStonePoint: "globalpoint bridgeStone 16 action:add"
+  addDonatedBridgeStone: "tag add donatedBridgeStone"
+  notifyDonation: "notify &aYou donated 16 cobblestone. Server total: %globalpoint.bridgeStone.amount%. io:chat"
+  openBridgeInspection: "folder addBridgeInspectionOpen,announceBridgeInspection"
+  addBridgeInspectionOpen: "globaltag add bridgeInspectionOpen"
+  announceBridgeInspection: "notifyall &eThe bridge inspection is now open. Talk to the Engineer. io:chat"
+  finishBridgeInspection: "folder addBridgeInspectionDone,rewardInspector"
+  addBridgeInspectionDone: "tag add bridgeInspectionDone"
+  rewardInspector: "give inspectionReward:2"

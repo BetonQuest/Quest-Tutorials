@@ -1,0 +1,14 @@
+conversations:
+  Engineer:
+    quester: "Engineer"
+    first: "intro"
+    NPC_options:
+      intro:
+        text: "The bridge is almost ready, but I need stone donations before tonight's inspection."
+        pointers: "askHow"
+      explain:
+        text: "Bring me cobblestone. At 18:00 I will close donations and inspect the bridge."
+    player_options:
+      askHow:
+        text: "How can I help?"
+        pointers: "explain"

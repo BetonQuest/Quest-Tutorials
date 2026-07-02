@@ -1,0 +1,6 @@
+conditions:
+  dailyHerbsStarted: "tag dailyHerbsStarted"
+  dailyHerbsDone: "tag dailyHerbsDone"
+  dailyHerbsReady: "tag dailyHerbsReady"
+  hasDailyHerbItems: "item dailyHerbs:3"
+  hasDailyHerbs: "and dailyHerbsReady,hasDailyHerbItems"

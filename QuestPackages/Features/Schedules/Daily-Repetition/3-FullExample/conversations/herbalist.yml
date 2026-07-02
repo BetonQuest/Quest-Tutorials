@@ -1,0 +1,26 @@
+conversations:
+  Herbalist:
+    quester: "Herbalist"
+    first: "finishQuest,questActive,alreadyDone,startQuest"
+    NPC_options:
+      startQuest:
+        text: "The garden grows back every morning. Could you gather three oak logs for today's remedies?"
+        pointers: "acceptQuest"
+        conditions: "!dailyHerbsStarted,!dailyHerbsDone"
+      questStarted:
+        text: "Thank you. Bring me three oak logs and I will pay you with an emerald."
+      questActive:
+        text: "You still need to gather and bring three oak logs for me."
+        conditions: "dailyHerbsStarted,!hasDailyHerbs"
+      finishQuest:
+        text: "These are perfect. Here is your emerald."
+        conditions: "dailyHerbsStarted,hasDailyHerbs"
+        actions: "finishDailyHerbs"
+      alreadyDone:
+        text: "You already helped me today. Come back after the morning reset."
+        conditions: "dailyHerbsDone"
+    player_options:
+      acceptQuest:
+        text: "I will gather them."
+        pointers: "questStarted"
+        actions: "startDailyHerbs"
