@@ -1,0 +1,15 @@
+conversations:
+  Miner:
+    quester: "Miner"
+    first: "startQuest"
+    NPC_options:
+      startQuest:
+        text: "Hey %player%, could you mine five stone blocks for me?"
+        pointers: "acceptQuest"
+      questStarted:
+        text: "Great! Bring me five stone blocks and I will reward you with 3 diamonds."
+    player_options:
+      acceptQuest:
+        text: "Sure, I will do that."
+        pointers: "questStarted"
+        actions: "startMiningQuest"

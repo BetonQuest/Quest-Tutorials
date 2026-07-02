@@ -1,0 +1,5 @@
+npcs:
+  'Miner': "citizens 21"
+
+npc_conversations:
+  Miner: "Miner"

@@ -1,0 +1,10 @@
+actions:
+  startMiningQuest: "folder addMiningQuestStarted,resetMiningProgress,addMineStoneObjective"
+  addMiningQuestStarted: "tag add miningQuestStarted"
+  resetMiningProgress: "point stoneMined 0 action:set"
+  addMineStoneObjective: "objective add mineStone"
+  addMiningProgress: "folder addMiningPoint,sendMiningProgress,sendMiningComplete,removeMineStoneObjectiveOnComplete"
+  addMiningPoint: "point stoneMined 1 action:add"
+  sendMiningProgress: "notify &a%point.stoneMined.amount%&8/&25 &7stone mined. io:chat conditions:!hasMinedEnoughStone"
+  sendMiningComplete: "notify &aYou mined enough stone. Return to the Miner! io:chat conditions:hasMinedEnoughStone"
+  removeMineStoneObjectiveOnComplete: "objective remove mineStone conditions:hasMinedEnoughStone"

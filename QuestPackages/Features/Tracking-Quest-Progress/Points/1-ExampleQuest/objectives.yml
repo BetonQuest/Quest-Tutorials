@@ -1,0 +1,2 @@
+objectives:
+  mineStone: "block stone -1 persistent actions:addMiningProgress"

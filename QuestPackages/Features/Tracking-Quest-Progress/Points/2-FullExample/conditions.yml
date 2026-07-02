@@ -1,0 +1,4 @@
+conditions:
+  miningQuestStarted: "tag miningQuestStarted"
+  hasMinedEnoughStone: "point stoneMined 5"
+  miningQuestDone: "tag miningQuestDone"

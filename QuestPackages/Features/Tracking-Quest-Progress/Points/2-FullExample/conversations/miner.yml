@@ -1,0 +1,26 @@
+conversations:
+  Miner:
+    quester: "Miner"
+    first: "finishQuest,checkProgress,completedQuest,startQuest"
+    NPC_options:
+      startQuest:
+        text: "Hey %player%, could you mine five stone blocks for me?"
+        pointers: "acceptQuest"
+        conditions: "!miningQuestStarted,!miningQuestDone"
+      questStarted:
+        text: "Great! Bring me five stone blocks and I will reward you with 3 diamonds."
+      checkProgress:
+        text: "You have mined %point.stoneMined.amount% of 5 stone blocks. Keep going!"
+        conditions: "miningQuestStarted,!hasMinedEnoughStone"
+      finishQuest:
+        text: "Perfect, that is enough stone. Here are your 3 diamonds!"
+        conditions: "miningQuestStarted,hasMinedEnoughStone"
+        actions: "finishMiningQuest"
+      completedQuest:
+        text: "Thanks again for helping me with the stone."
+        conditions: "miningQuestDone"
+    player_options:
+      acceptQuest:
+        text: "Sure, I will do that."
+        pointers: "questStarted"
+        actions: "startMiningQuest"
