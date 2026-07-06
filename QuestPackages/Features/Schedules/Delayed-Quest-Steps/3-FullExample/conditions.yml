@@ -1,0 +1,5 @@
+conditions:
+  donatedBridgeStone: "tag donatedBridgeStone"
+  hasBridgeStoneItems: "item bridgeStone:16"
+  bridgeInspectionOpen: "globaltag bridgeInspectionOpen"
+  bridgeInspectionDone: "tag bridgeInspectionDone"

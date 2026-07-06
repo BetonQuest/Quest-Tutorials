@@ -1,0 +1,11 @@
+npcs:
+  EngineerNpc: "citizens 32"
+
+npc_conversations:
+  EngineerNpc: "Engineer"
+
+schedules:
+  openBridgeInspection:
+    type: realtime-daily
+    time: '18:00'
+    actions: openBridgeInspection

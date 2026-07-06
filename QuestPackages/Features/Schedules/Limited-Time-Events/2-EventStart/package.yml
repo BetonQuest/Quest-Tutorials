@@ -1,0 +1,11 @@
+npcs:
+  AstronomerNpc: "citizens 33"
+
+npc_conversations:
+  AstronomerNpc: "Astronomer"
+
+schedules:
+  startMeteorShower:
+    type: realtime-daily
+    time: '20:00'
+    actions: startMeteorShower

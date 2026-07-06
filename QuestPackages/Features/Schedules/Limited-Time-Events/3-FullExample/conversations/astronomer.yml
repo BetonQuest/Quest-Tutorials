@@ -1,0 +1,24 @@
+conversations:
+  Astronomer:
+    quester: "Astronomer"
+    first: "claimReward,missingFragments,collecting,alreadyClaimed,waiting"
+    NPC_options:
+      waiting:
+        text: "The sky is calm right now. Come back when the meteor shower begins."
+        conditions: "!meteorEventActive"
+      collecting:
+        text: "The shower is active. You have %point.meteorFragments.amount% of 5 fragments."
+        conditions: "meteorEventActive,!canClaimMeteorReward,!meteorRewardClaimed"
+      missingFragments:
+        text: "You collected enough fragments, but I need five of them in your inventory for the research."
+        conditions: "meteorEventActive,hasFiveMeteorFragments,!hasMeteorFragmentItems,!meteorRewardClaimed"
+      claimReward:
+        text: "Five fragments! That is enough for my research. Take this diamond."
+        conditions: "meteorEventActive,canClaimMeteorReward,!meteorRewardClaimed"
+        actions: "claimMeteorReward"
+      alreadyClaimed:
+        text: "You already claimed your meteor reward for this shower."
+        conditions: "meteorRewardClaimed"
+    player_options:
+      thanks:
+        text: "Thanks."

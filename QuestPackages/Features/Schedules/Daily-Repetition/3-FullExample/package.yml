@@ -1,0 +1,11 @@
+npcs:
+  HerbalistNpc: "citizens 31"
+
+npc_conversations:
+  HerbalistNpc: "Herbalist"
+
+schedules:
+  resetDailyHerbs:
+    type: realtime-daily
+    time: '06:00'
+    actions: resetDailyHerbs

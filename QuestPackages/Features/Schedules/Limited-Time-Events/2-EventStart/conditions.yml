@@ -1,0 +1,6 @@
+conditions:
+  meteorEventActive: "globaltag meteorEventActive"
+  hasFiveMeteorFragments: "point meteorFragments 5"
+  hasMeteorFragmentItems: "item meteorFragment:5"
+  canClaimMeteorReward: "and hasFiveMeteorFragments,hasMeteorFragmentItems"
+  meteorRewardClaimed: "tag meteorRewardClaimed"

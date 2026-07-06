@@ -1,0 +1,5 @@
+npcs:
+  HerbalistNpc: "citizens 31"
+
+npc_conversations:
+  HerbalistNpc: "Herbalist"

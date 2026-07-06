@@ -1,0 +1,2 @@
+objectives:
+  gatherDailyLogs: "block OAK_LOG -3 notify actions:addDailyHerbsReady"
