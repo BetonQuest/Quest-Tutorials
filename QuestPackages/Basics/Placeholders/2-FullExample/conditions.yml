@@ -1,0 +1,8 @@
+conditions:
+  isDay: "time 6-18"
+  hasReceivedFood: "tag foodReceived"
+  hasDoneTour: "tag tourDone"
+  hasStartedFishing: "tag startedFishing"
+  hasFishInInv: "item cod:3"
+  hasDoneQuest: "tag questDone"
+  playerNameStartsWithA: "variable %player% A.*"
