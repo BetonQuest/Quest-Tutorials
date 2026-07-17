@@ -1,0 +1,14 @@
+npcs:
+  JackNpc: "citizens 1"
+  BlacksmithNpc: "citizens 2"
+npc_conversations:
+  JackNpc: "Jack"
+  BlacksmithNpc: "Blacksmith"
+
+items:
+  steak: "simple COOKED_BEEF"
+  cod: "simple COD"
+  ironHelmet: "simple IRON_HELMET"
+  ironChestplate: "simple IRON_CHESTPLATE"
+  ironLeggings: "simple IRON_LEGGINGS"
+  ironBoots: "simple IRON_BOOTS"
