@@ -1,0 +1,64 @@
+conversations:
+  Jack:
+    quester: "Jack"
+    first: "tourAlreadyDone,alreadyReceivedFood,firstGreeting"
+
+    NPC_options:
+      firstGreeting:
+        text: "Hello and welcome to my town traveler! Nice to see you. Where are you from?"
+        pointers: "whereYouFrom"
+      whoAmI:
+        text: "I am &6Jack&r. The mayor of this beautiful town. We have some big farms and good old taverns well worth checking out! So now where are you from?"
+        pointers: "smallIsland,bigCity"
+      islandAnswer:
+        text: "That sounds familiar! I grew up in a small town with few people. So we already have something in common! Do you want something to eat?"
+        pointers: "yesPlease"
+      cityAnswer:
+        text: "Oh I know! I think you're from Kayra, right? Nice city but to be honest I prefer country life... You look a bit hungry. Do you want something to eat?"
+        pointers: "yesPlease"
+      foodAnswer:
+        text: "You're welcome! Take it... &7*gives food*"
+        actions: "giveFoodToPlayer,addFoodReceivedTag"
+        pointers: "thankYou"
+        conditions: "!hasReceivedFood"
+      alreadyReceivedFood:
+        text: "Hey %player%! I think I already gave you your welcome food..."
+        conditions: "hasReceivedFood"
+        pointers: "saySorry"
+      townTour:
+        text: "Yeah that's true. You know what also smells good? The fresh air in my town! Would you like to take a little tour?"
+        pointers: "enoughTime,noTimeForThat"
+      startTheTour:
+        text: "Great! It is a honor for me to guide you through the town."
+        actions: "townTour,addTourDoneTag"
+      noProblem:
+        text: "That's fine! Maybe you have time another day... Just talk to me again. See you!"
+      tourAlreadyDone:
+        text: "I hope you enjoy your stay in our city!"
+        conditions: "hasDoneTour"
+
+    player_options:
+      whereYouFrom:
+        text: "First I want to know who you are!"
+        pointers: "whoAmI"
+      smallIsland:
+        text: "From a small island located east."
+        pointers: "islandAnswer"
+      bigCity:
+        text: "From a big city located west."
+        pointers: "cityAnswer"
+      yesPlease:
+        text: "Oh yes I'm starving! Thank you."
+        pointers: "foodAnswer"
+      thankYou:
+        text: "Oh that smells really good!"
+        pointers: "townTour"
+      saySorry:
+        text: "You are right. Thanks again!"
+        pointers: "townTour"
+      enoughTime:
+        text: "Yes of course! Show me everything."
+        pointers: "startTheTour"
+      noTimeForThat:
+        text: "Sorry, but I don't have time now..."
+        pointers: "noProblem"
